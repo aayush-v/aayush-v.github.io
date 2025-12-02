@@ -1,198 +1,258 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aayush Atul Verma</title>
+  <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
 
-    <title>Aayush Atul Verma</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
 
-    <meta name="author" content="Aayush Atul Verma">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Aayush Atul Verma
-                </p>
-                <p>I'm a PhD student at the <a href="https://faculty.engineering.asu.edu/yezhouyang/" target="_blank">
-                  ASU Active Perception Group</a>, where I am guided by <a href="https://faculty.engineering.asu.edu/yezhouyang/" target="_blank">Dr. Yezhou Yang</a>. 
-                  My research interests lie in the field of computer vision, especially in neuromorphic vision and generative models. I am particularly 
-                  interested in exploring the temporal dynamics of these modalities and investigating how they can be integrated with both visual 
-                  and non-visual data, such as text, to enhance perception and motion understanding.</p>
-                  
-                  I earned my Master's degree in Computer Science from <a href="https://www.asu.edu" target="_blank">Arizona State University</a> in 2024, following my Bachelor's degree in 
-                  Computer Science from <a href="https://www.bits-pilani.ac.in" target="_blank">Birla Institute of Technology and Science, Pilani</a> (BITS Pilani) in 2021. 
-                  Prior to starting my Master's, I spent a year working at Postman, where I gained valuable industry experience.
-                  
-                <p style="text-align:center">
-                  <a href="mailto:averma90@asu.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=139ShbMAAAAJ&hl=en&oi=ao">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/aayush-verma7/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/aayush-v/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/profileImage.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profileImage.jpeg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+    }
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-10px"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2%;vertical-align:middle;width:63%">
-              <h2>News</h2>
-                <div style="width:100%;overflow-y:scroll; height:100px;">
-                    <ul id="News">
-                      <li> [November, 2024] Organizing workshop at <em>WACV 2025</em> on <em>Event-based Vision in the Era of Generative AI</em>.</li>
-                      <li> [November, 2024] Co-organized <em>Learning on Graphs conference 2024, local meetup</em> Tempe AZ.</li>
-                      <li> [August, 2024] Started my PhD.</li>
-                      <li> [April, 2024] Two <a>papers</a> accepted at <em>CVPR workshops 2024</em>.</li>
-                      <li> [March, 2024] One <a href="eventbasedvision.github.io/eTraM/">paper</a> accepted at <em>CVPR 2024</em> (Highlight).</li>
-                    </ul>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    h1 {
+      margin-bottom: 0px;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+    }
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                Important papers are <span class="highlight">highlighted</span>.
-              </td>
-            </tr>
-      </tbody>
-    </table>
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 0px;
+      padding: 0 20px;
+    }
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <tr bgcolor="#ffffd0">
-          <td style="padding:20px;width:25%;vertical-align:middle;text-align: center;">
-            <img src="images/eTraM_thumbnail.jpg" alt="Boundary_png" style="border-style: none" height="150" width="160">
-          </td>
-          <td width="75%" valign="middle">
-            <a href="eventbasedvision.github.io/eTraM/">
-              <span class="papertitle">eTraM: Event-based Traffic Monitoring Dataset</span>
-            </a>
-            <br>
-            <div style="padding: 5px 0px;">
-            <strong>Aayush Atul Verma*</strong>,
-            Bharatesh Chakravarthi*
-            Arpitsinh Vaghela*,
-            Hua Wei,
-            Yezhou Yang
-            </div>
-            <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024 (Highlight Paper)</em>
-            <p style="text-align:left; margin: 0;">
-              <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Verma_eTraM_Event-based_Traffic_Monitoring_Dataset_CVPR_2024_paper.html">PDF</a> &nbsp;|&nbsp;
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfH2LI5oqWWfose-pBC3dsbaAMvRQuv0BI93njV_5wQjYx83w/viewform">Data</a> &nbsp;|&nbsp;
-              <a href="https://github.com/eventbasedvision/eTraM">GitHub</a> &nbsp;|&nbsp;
-              <a href="">Poster</a>
-            </p>
-          </td>
-        </tr>
+    .profile img {
+      width: 225px;
+      height: 225px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-        <tr bgcolor="">
-          <td style="padding:20px;width:25%;vertical-align:middle;text-align: center;">
-            <img src="images/NeVi_survey_thumbnail.png" alt="Boundary_png" style="border-style: none" height="130" width="180">
-          </td>
-          <td width="75%" valign="middle" style="padding-right: 15px;">
-            <a href="https://github.com/chakravarthi589/Event-based-Vision_Resources/">
-              <span class="papertitle">Recent Event Camera Innovations: A Survey</span>
-            </a>
-            <div style="padding: 5px 0px;">
-              Bharatesh Chakravarthi,
-              <strong>Aayush Atul Verma</strong>,
-              Kostas Daniilidis,
-              Cornelia Fermuller,<br>
-              Yezhou Yang
-            </div>
-            <em>The 18th European Conference on Computer Vision ECCV 2024 Workshop (NeVi), 2024</em>
-            <p style="text-align:left; margin: 0;">
-                <a href="https://www.arxiv.org/pdf/2408.13627">PDF</a> &nbsp;|&nbsp;
-              <a href="https://github.com/chakravarthi589/Event-based-Vision_Resources">GitHub</a> &nbsp;|&nbsp;
-              <a href="">Poster</a>
-            </p>
-          </td>
-        </tr>
-         
-        <tr bgcolor="">
-          <td style="padding:20px;width:25%;vertical-align:middle;text-align: center;">
-            <img src="images/MLLM_Hallucinations_thumbnail.png" alt="Boundary_png" style="border-style: none; text-align: center;" height="159" width="135">
-          </td>
-          <td width="75%" valign="middle" style="padding-right: 15px;">
-            <a href="">
-              <span class="papertitle">Evaluating Multimodal Large Language Models across Distribution Shifts and Augmentations</span>
-            </a>
-            <br>
-            <div style="padding: 5px 0px;">
-            <strong>Aayush Atul Verma*</strong>,
-            Amir Saeidi*, Shamanthak Hegde*, Ajay Therala*, Fenil Denish Bardoliya*, Nagaraju Machavarapu*,
-            Shri Ajay Kumar Ravindhiran*, Srija Malyala*, Agneet Chatterjee*, Yezhou Yang, Chitta Baral
-            </div>
-            <em style="margin-top: 25px;">IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshop (CVPRW), 2024</em>
-            
-            <p style="text-align:left; margin: 0;">
-              <a href="https://openaccess.thecvf.com/content/CVPR2024W/EvGenFM/html/Verma_Evaluating_Multimodal_Large_Language_Models_Across_Distribution_Shifts_and_Augmentations_CVPRW_2024_paper.html">PDF</a> 
-              <!-- &nbsp;|&nbsp; -->
-              <!-- <a href="">GitHub</a> &nbsp;|&nbsp; -->
-              <!-- <a href="">Poster</a> -->
-            </p>
-          </td>
-        </tr>
+    .links {
+      text-align: center;
+      margin-top: 10px;
+    }
 
-        <tr bgcolor="">
-          <td style="padding:20px;width:25%;vertical-align:middle;text-align: center;">
-            <img src="images/SEVD_thumbnail.png" alt="Boundary_png" style="border-style: none" height="140" width="180">
-          </td>
-          <td width="75%" valign="middle" style="padding-right: 15px;">
-            <a href="eventbasedvision.github.io/SEVD/">
-              <span class="papertitle">SEVD: Synthetic Event-based Vision Dataset for Ego and Fixed Traffic Perception</span>
-            </a>
-            <div style="padding: 5px 0px;">
-              Manideep Reddy Alimanti*,
-              Bharatesh Chakravarthi*,
-              <strong>Aayush Atul Verma</strong>,
-              Arpitsinh Vaghela,
-              Hua Wei,
-              Xuesong Zhou,
-              Yezhou Yang
-            </div>
-            <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshop (CVPRW), 2024</em>
-            <p style="text-align:left; margin: 0;">
-                <a href="https://arxiv.org/abs/2404.10540">PDF</a> &nbsp;|&nbsp;
-              <a href="https://github.com/eventbasedvision/SEVD">GitHub</a> &nbsp;|&nbsp;
-              <a href="">Poster</a>
-            </p>
-          </td>
-        </tr>
+    .links a {
+      margin: 0 10px;
+      color: #0066cc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-weight: 650;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .news-list {
+      max-height: 150px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    .pub {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .pub img {
+      width: 130px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .pub-title {
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .highlight {
+      background: #fff5c2;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="card">
+      <h1>Aayush Atul Verma</h1>
+
+      <div class="profile">
+        <img src="images/profileImage.jpeg" alt="profile photo">
+
+        <div style="max-width: 630px; text-align: justify;">
+          <p>
+            I am a PhD student in the 
+            <a href="https://faculty.engineering.asu.edu/yezhouyang/" target="_blank">Active Perception Group</a> at 
+            <a href="https://www.asu.edu" target="_blank">Arizona State University</a>, 
+            advised by <a href="https://faculty.engineering.asu.edu/yezhouyang/" target="_blank">Dr. Yezhou Yang</a>.
+            My research focuses on the foundations of generative modeling, particularly how to make generative processes 
+            more efficient, adaptive, and responsive to the task. I'm interested in questions around sampling, 
+            computation allocation, and the role of time and sparsity in generation. My earlier research on 
+            asynchronous perception shapes how I think about these problems.
+          </p>
+
+          <p>
+            Prior to my PhD, I earned a Master's in Computer Science at <a href="https://www.asu.edu" target="_blank">Arizona State University</a> in 2024, and a Bachelor's 
+            in Computer Science at <a href="https://www.bits-pilani.ac.in" target="_blank">Birla Institute of Technology and Science, Pilani</a> (BITS Pilani) in 2021.  
+            In Summer 2025, I interned at <a href="https://www.analog.com/en/incubators/analog-garage.html" target="_blank">Analog Garage (Analog Devices)</a>, where I worked on 
+            efficient neural computation across spiking, graph, and conventional vision networks.
+          </p>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="mailto:averma90@asu.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=139ShbMAAAAJ&hl=en&oi=ao" target="_blank">Scholar</a>
+        <a href="https://www.linkedin.com/in/aayush-verma7/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/aayush-v/" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- NEWS -->
+    <div class="card">
+      <h2>News</h2>
+      <div class="news-list">
+        <ul>
+          <li>[November, 2025] Paper accepted to <em>WACV 2026</em>.</li>
+          <li>[Summer, 2025] Completed research internship at <a href="https://www.analog.com/en/incubators/analog-garage.html" target="_blank">Analog Garage (Analog Devices)</a>.</li>
+          <li>[November, 2024] Organized workshop at <em>WACV 2025</em>.</li>
+          <li>[November, 2024] Co-organized <em>Learning on Graphs 2024</em> local meetup (Tempe AZ).</li>
+          <li>[August, 2024] Started my PhD at ASU Active Perception Group.</li>
+          <li>[April, 2024] One paper accepted at <em>CVPR 2024 (Highlight)</em>.</li>
+          <li>[April, 2024] Two papers accepted at <em>CVPR Workshops</em>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div class="card">
+      <h2>Research</h2>
+
+      <!-- <p class="small">Important papers are <span class="highlight">highlighted</span>.</p> -->
+
+      <!-- WACV 2026 (placeholder) -->
+      <div class="pub">
+        <img src="images/WACV2026_thumbnail.jpg" style="opacity:0.7;" alt="WACV 2026 thumbnail">
+        <div>
+          <div class="pub-title">Event-based Graph Representation with Spatial and Motion Vectors for Asynchronous Object Detection</div>
+          <div class="small"><strong>A. A. Verma*</strong>,..., Y. Yang - <em>WACV 2026</em></div>
+          <div class="small">Links coming soon.</div>
+        </div>
+      </div>
 
 
-        
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  I sincerely thank <a href="" target="_blank">Jon Baron</a> for developing and open sourcing the web layout.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+      <!-- eTraM -->
+      <div class="pub">
+        <img src="images/eTraM_thumbnail.jpg">
+        <div>
+          <div class="pub-title">eTraM: Event-based Traffic Monitoring Dataset</div>
+          <div class="small"><strong>A. A. Verma*</strong>, B. Chakravarthi*, A. Vaghela*, H. Wei, Y. Yang - <em>CVPR 2024 (Highlight)</em></div>
+          <div class="small">
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Verma_eTraM_Event-based_Traffic_Monitoring_Dataset_CVPR_2024_paper.html">PDF</a>
+            &nbsp;|&nbsp;
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfH2LI5oqWWfose-pBC3dsbaAMvRQuv0BI93njV_5wQjYx83w/viewform">Data</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/eventbasedvision/eTraM">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Survey -->
+      <div class="pub">
+        <img src="images/NeVi_survey_thumbnail.png">
+        <div>
+          <div class="pub-title">Recent Event Camera Innovations: A Survey</div>
+          <div class="small">B. Chakravarthi, <strong>A. A. Verma</strong>, K. Daniilidis, C. Fermuller, Y. Yang - <em>ECCV 2024 Workshop</em></div>
+          <div class="small">
+            <a href="https://www.arxiv.org/pdf/2408.13627">PDF</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/chakravarthi589/Event-based-Vision_Resources">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MLLM -->
+      <div class="pub">
+        <img src="images/MLLM_Hallucinations_thumbnail.png">
+        <div>
+          <div class="pub-title">Evaluating Multimodal Large Language Models across Distribution Shifts and Augmentations</div>
+          <div class="small"><strong>A. A. Verma*</strong>, A. Saeidi*, S. Hegde*, ...,  A. Chatterjee*, Y. Yang, C. Baral - <em>CVPRW 2024</em></div>
+          <div class="small">
+            <a href="https://openaccess.thecvf.com/content/CVPR2024W/EvGenFM/html/Verma_Evaluating_Multimodal_Large_Language_Models_Across_Distribution_Shifts_and_Augmentations_CVPRW_2024_paper.html">PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEVD -->
+      <div class="pub">
+        <img src="images/SEVD_thumbnail.png">
+        <div>
+          <div class="pub-title">SEVD: Synthetic Event-based Vision Dataset</div>
+          <div class="small">M. R. Alimanti*, B. Chakravarthi*, <strong>A. A. Verma</strong>, A. Vaghela, H. Wei, X. Zhou, Y. Yang - <em>CVPRW 2024</em></div>
+          <div class="small">
+            <a href="https://arxiv.org/abs/2404.10540">PDF</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/eventbasedvision/SEVD">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Last updated: November 2025 • Layout inspired by Jon Barron
+    </footer>
+  </div>
+</body>
 </html>
