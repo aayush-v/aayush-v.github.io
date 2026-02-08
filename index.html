@@ -9,6 +9,7 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
       margin: 0;
       background: #f7f7f7;
       color: #222;
@@ -16,7 +17,7 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 40px auto;
       padding: 0 20px;
     }
@@ -31,9 +32,10 @@
 
     h1 {
       margin-bottom: 0px;
-      font-size: 32px;
+      font-size: 38px;
       font-weight: 700;
       text-align: center;
+      margin-top: 4px;
     }
 
     .profile {
@@ -67,8 +69,8 @@
 
     h2 {
       margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 22px;
+      margin-bottom: 15px;
+      font-size: 30px;
       font-weight: 650;
     }
 
@@ -97,12 +99,13 @@
     }
 
     .pub-title {
+      font-size: 1.2em;
       font-weight: 700;
-      margin-bottom: 6px;
+      margin-bottom: 0px;
     }
 
     .small {
-      font-size: 14px;
+      font-size: 18px;
       color: #555;
     }
 
@@ -131,7 +134,7 @@
       <div class="profile">
         <img src="images/profileImage.jpeg" alt="profile photo">
 
-        <div style="max-width: 630px; text-align: justify;">
+        <div style="max-width: 720px; text-align: justify;">
           <p>
             I am a PhD student in the 
             <a href="https://faculty.engineering.asu.edu/yezhouyang/" target="_blank">Active Perception Group</a> at 
@@ -165,6 +168,7 @@
       <h2>News</h2>
       <div class="news-list">
         <ul>
+          <li>[January, 2026] Paper accepted to <em>ICLR 2026</em>.</li>
           <li>[November, 2025] Paper accepted to <em>WACV 2026</em>.</li>
           <li>[Summer, 2025] Completed research internship at <a href="https://www.analog.com/en/incubators/analog-garage.html" target="_blank">Analog Garage (Analog Devices)</a>.</li>
           <li>[November, 2024] Organized workshop at <em>WACV 2025</em>.</li>
@@ -182,13 +186,28 @@
 
       <!-- <p class="small">Important papers are <span class="highlight">highlighted</span>.</p> -->
 
+      <!-- ICLR 2026 -->
+      <div class="pub">
+        <img src="images/domain_thumbnail.png" style="opacity:0.7;" alt="ICLR 2026 thumbnail">
+        <div>
+          <div class="pub-title">Domain Expansion: A Latent Space Construction Framework for Multi-Task Learning</div>
+          <div class="small">C. Huang*, K. Vo*, <strong>A. A. Verma*</strong>, D. Lu, Y. Yang - <em>ICLR 2026</em></div>
+          <div class="small">
+            <a href="https://arxiv.org/abs/2601.20069">PDF</a>
+          </div>
+        </div>
+      </div>
+
+
       <!-- WACV 2026 (placeholder) -->
       <div class="pub">
-        <img src="images/WACV2026_thumbnail.jpg" style="opacity:0.7;" alt="WACV 2026 thumbnail">
+        <img src="images/egsmv_thumbnail.png" style="opacity:0.7;" alt="WACV 2026 thumbnail">
         <div>
           <div class="pub-title">Event-based Graph Representation with Spatial and Motion Vectors for Asynchronous Object Detection</div>
-          <div class="small"><strong>A. A. Verma*</strong>,..., Y. Yang - <em>WACV 2026</em></div>
-          <div class="small">Links coming soon.</div>
+          <div class="small"><strong>A. A. Verma*</strong>, A. Vaghela, B. Chakravarthi, K. Chanda, Y. Yang - <em>WACV 2026</em></div>
+          <div class="small">
+            <a href="https://arxiv.org/abs/2507.15150">PDF</a>
+          </div>
         </div>
       </div>
 
@@ -214,7 +233,7 @@
         <img src="images/NeVi_survey_thumbnail.png">
         <div>
           <div class="pub-title">Recent Event Camera Innovations: A Survey</div>
-          <div class="small">B. Chakravarthi, <strong>A. A. Verma</strong>, K. Daniilidis, C. Fermuller, Y. Yang - <em>ECCV 2024 Workshop</em></div>
+          <div class="small">B. Chakravarthi, <strong>A. A. Verma</strong>, K. Daniilidis, C. Fermuller, Y. Yang - <em>ECCVW 2024</em></div>
           <div class="small">
             <a href="https://www.arxiv.org/pdf/2408.13627">PDF</a>
             &nbsp;|&nbsp;
